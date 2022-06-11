@@ -6,7 +6,7 @@ import io.grpc.MethodDescriptor
 import io.grpc.MethodDescriptor.MethodType.UNARY
 
 class SystemClient(
-    val rpcClient: ManagedChannel
+    private val rpcClient: ManagedChannel
 ) {
 
     fun ping() =
