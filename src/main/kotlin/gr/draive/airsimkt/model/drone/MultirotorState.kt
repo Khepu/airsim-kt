@@ -1,6 +1,6 @@
 package gr.draive.airsimkt.model.drone
 
-import gr.draive.airsimkt.model.KinematicsState
+import gr.draive.airsimkt.model.environment.KinematicsState
 import gr.draive.airsimkt.model.RCData
 import gr.draive.airsimkt.model.environment.CollisionInfo
 import gr.draive.airsimkt.model.environment.GeoPoint

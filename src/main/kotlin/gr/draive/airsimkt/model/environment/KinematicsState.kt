@@ -1,4 +1,4 @@
-package gr.draive.airsimkt.model
+package gr.draive.airsimkt.model.environment
 
 import gr.draive.airsimkt.model.math.Quaternion
 import gr.draive.airsimkt.model.math.Vector3

@@ -1,7 +1,7 @@
 package gr.draive.airsimkt.model.car
 
 import gr.draive.airsimkt.model.environment.CollisionInfo
-import gr.draive.airsimkt.model.KinematicsState
+import gr.draive.airsimkt.model.environment.KinematicsState
 
 data class CarState(
     val speed: Double,
