@@ -7,4 +7,6 @@ abstract class VehicleClient(
     val port: Int
 ) {
     protected val rpcClient: ManagedChannel = createRpcClient(ipAddress, port)
+
+    val system = SystemClient(rpcClient)
 }

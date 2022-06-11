@@ -1,5 +1,11 @@
 package gr.draive.airsimkt.client
 
-class MultirotorClient: VehicleClient() {
+class MultirotorClient(
+    ipAddress: String,
+    port: Int
+) : VehicleClient(
+    ipAddress,
+    port
+) {
 
 }

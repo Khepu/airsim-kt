@@ -8,5 +8,4 @@ class CarClient(
     port
 ) {
 
-    val system = SystemClient(rpcClient)
 }
