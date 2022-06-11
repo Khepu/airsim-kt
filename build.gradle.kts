@@ -12,6 +12,8 @@ repositories {
 }
 
 dependencies {
+    implementation("io.grpc:grpc-kotlin-stub:1.3.0")
+
     testImplementation(kotlin("test"))
 }
 
