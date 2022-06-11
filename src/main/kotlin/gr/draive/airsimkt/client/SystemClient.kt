@@ -10,12 +10,11 @@ class SystemClient(
 ) {
 
     fun ping() =
-        rpcClient
-            .newCall(
-                MethodDescriptor
-                    .newBuilder<String, Boolean>()
-                    .setFullMethodName("ping")
-                    .setType(UNARY)
-                    .build(),
-                CallOptions.DEFAULT)
+        rpcClient.newCall(
+            MethodDescriptor
+                .newBuilder<String, Boolean>()
+                .setFullMethodName("ping")
+                .setType(UNARY)
+                .build(),
+            CallOptions.DEFAULT)
 }
