@@ -17,6 +17,7 @@ dependencies {
     implementation("com.ensarsarajcic.kotlinx:serialization-msgpack:0.5.1")
 
     testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 }
 
 tasks.test {
