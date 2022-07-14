@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test
 
 class TestSystemClient {
 
-    private val carClient = CarClient("localhost", 41452)
+    private val carClient = CarClient("localhost", 41451)
 
     @Test
-    fun testPint() {
+    fun testPing() {
         carClient.system.ping()
     }
 }
