@@ -1,9 +1,7 @@
 package gr.draive.airsimkt.client
 
-import io.grpc.ManagedChannel
-import io.grpc.ManagedChannelBuilder
+import org.msgpack.rpc.Client
 
-fun createRpcClient(ipAddress: String, port: Int): ManagedChannel =
-    ManagedChannelBuilder
-        .forAddress(ipAddress, port)
-        .build()
+
+fun createMsgPackRpcClient(ipAddress: String, port: Int): Client =
+    Client(ipAddress, port)

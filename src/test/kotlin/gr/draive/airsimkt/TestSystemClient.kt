@@ -9,6 +9,14 @@ class TestSystemClient {
 
     @Test
     fun testPing() {
-        carClient.system.ping()
+        val future = carClient.system.ping()
+        assert(future.get().asBooleanValue().boolean)
     }
+
+    @Test
+    fun testReset() {
+        val future = carClient.system.reset()
+        assert(future.get().isNilValue)
+    }
+
 }
